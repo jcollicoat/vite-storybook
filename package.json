@@ -57,6 +57,7 @@
     "@storybook/react": "^7.0.0-alpha.47",
     "@storybook/react-vite": "7.0.0-alpha.47",
     "@storybook/testing-library": "^0.0.14-next.0",
+    "@types/babel__generator": "^7.6.4",
     "babel-loader": "^8.3.0",
     "eslint-plugin-storybook": "^0.6.7",
     "storybook": "7.0.0-alpha.47"
