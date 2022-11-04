@@ -6,6 +6,7 @@
     "standard-jsx",
     "standard-react"
   ],
+  "ignorePatterns": ["!.storybook/*"],
   "plugins": [
     "jsx-a11y"
   ],
