@@ -14,7 +14,8 @@
     "prepare": "husky install",
     "update-deps": "node ./src/config/update-deps.mjs",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build:storybook-dev": "storybook build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "5.16.5",
@@ -50,16 +51,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
-    "@storybook/addon-actions": "^7.0.0-alpha.47",
     "@storybook/addon-essentials": "^7.0.0-alpha.47",
-    "@storybook/addon-interactions": "^7.0.0-alpha.47",
-    "@storybook/addon-links": "^7.0.0-alpha.47",
     "@storybook/react": "^7.0.0-alpha.47",
     "@storybook/react-vite": "7.0.0-alpha.47",
-    "@storybook/testing-library": "^0.0.14-next.0",
     "@types/babel__generator": "^7.6.4",
     "babel-loader": "^8.3.0",
     "eslint-plugin-storybook": "^0.6.7",
+    "path-browserify": "^1.0.1",
     "storybook": "7.0.0-alpha.47"
   }
 }
