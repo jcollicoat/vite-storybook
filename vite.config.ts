@@ -6,6 +6,12 @@ import svgrPlugin from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig(configEnv => ({
+  // In dev, all of these are available. In build, none are available
+  // define: {
+  //   'import.meta.env.STORYBOOK_DEFINE': JSON.stringify('vitestorybookdefine'),
+  //   'import.meta.env.VITE_DEFINE': JSON.stringify('vitevitedefine'),
+  //   'import.meta.env.OTHER_DEFINE': JSON.stringify('viteotherdefine'),
+  // },
   plugins: [
     react(),
     tsConfigPaths(),
