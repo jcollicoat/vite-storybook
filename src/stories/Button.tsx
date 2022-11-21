@@ -33,6 +33,15 @@ export const Button = ({
   label,
   ...props
 }: ButtonProps) => {
+  console.log('Build:')
+  console.log('Expect: true | ', import.meta.env.STORYBOOK)
+  console.log('Expect: StorybookSBMainDefine | ', import.meta.env.STORYBOOK_SBMAIN_DEFINE)
+  console.log('Expect: ViteSBMainDefine | ', import.meta.env.VITE_SBMAIN_DEFINE)
+  console.log('Expect: OtherSBMainDefine | ', import.meta.env.OTHER_SBMAIN_DEFINE)
+  console.log('Expect: StorybookViteConfigDefine | ', import.meta.env.STORYBOOK_VITECONFIG_DEFINE)
+  console.log('Expect: ViteViteConfigDefine | ', import.meta.env.VITE_VITECONFIG_DEFINE)
+  console.log('Expect: OtherViteConfigDefine | ', import.meta.env.OTHER_VITECONFIG_DEFINE)
+
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary'
   return (
     <button

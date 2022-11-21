@@ -8,16 +8,11 @@ const config: StorybookConfig = {
   viteFinal(config) {
     const merged = mergeConfig(config, {
         // In dev, all of these are available. In build, none are available
-        // define: {
-        //     'import.meta.env.STORYBOOK_DEFINE': JSON.stringify('mainstorybookdefine'),
-        //     'import.meta.env.VITE_DEFINE': JSON.stringify('mainvitedefine'),
-        //     'import.meta.env.OTHER_DEFINE': JSON.stringify('mainotherdefine'),
-        //   },
-      resolve: {
-        alias: {
-          path: "path-browserify",
+        define: {
+            'import.meta.env.STORYBOOK_SBMAIN_DEFINE': JSON.stringify('StorybookSBMainDefine'),
+            'import.meta.env.VITE_SBMAIN_DEFINE': JSON.stringify('ViteSBMainDefine'),
+            'import.meta.env.OTHER_SBMAIN_DEFINE': JSON.stringify('OtherSBMainDefine'),
         },
-      },
     });
     return merged;
   },

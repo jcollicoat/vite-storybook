@@ -13,9 +13,8 @@
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "prepare": "husky install",
     "update-deps": "node ./src/config/update-deps.mjs",
-    "storybook": "cross-env STORYBOOK_TEST=storybooktest VITE_TEST=vitetest OTHER_TEST=othertest storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "build:storybook-dev": "cross-env STORYBOOK_TEST=storybooktest VITE_TEST=vitetest OTHER_TEST=othertest storybook build"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "5.16.5",
